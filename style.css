@@ -1,3 +1,27 @@
 body{
     background: beige;
 }
+
+.flex-container{
+    border: 1px solid black;
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /*row, colum, row-reverse, colum-reverse*/
+
+}
+
+.caja{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black; /*Color de la letra*/
+    font-family: 'Courier New', Courier, monospace; /*estilo de fuente*/
+    font-weight: bold; /*Altura de la fuente*/
+    width: 120px; /*ancho caja*/
+    height: 120px; /*altura caja*/
+    line-height: 120px; /*alinear respecto a la altura*/
+    text-align: center; /*alinear respecto al ancho*/
+    margin: 5px;
+    /**float: left; /*alinear a la izquierda una caja al lado de la otra*/
+
+}
