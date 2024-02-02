@@ -7,7 +7,15 @@ body{
     background-color: #ccc;
     padding: 20px;
     display: flex;
-    flex-direction: row; /*row, colum, row-reverse, colum-reverse*/
+    /*flex-direction: row; /*row, colum, row-reverse, colum-reverse*/
+    /*flex-wrap: wrap; /*Envoltorio de flex, acomodar las cajas*/
+    flex-flow: row wrap; /*Combina flex-direction y flex-wrap*/
+    justify-content: space-around; /*Distribuye el espaciado entre las cajas*/
+    /*align-items: center; /*Poner los elementos centrados dentro de la caja*/
+    align-content: center; /*Misma funcion de align items*/
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
 
 }
 
@@ -17,11 +25,31 @@ body{
     color: black; /*Color de la letra*/
     font-family: 'Courier New', Courier, monospace; /*estilo de fuente*/
     font-weight: bold; /*Altura de la fuente*/
-    width: 120px; /*ancho caja*/
-    height: 120px; /*altura caja*/
+    width: 200px; /*ancho caja*/
+    height: 200px; /*altura caja*/
     line-height: 120px; /*alinear respecto a la altura*/
     text-align: center; /*alinear respecto al ancho*/
     margin: 5px;
     /**float: left; /*alinear a la izquierda una caja al lado de la otra*/
 
+}
+
+.c1{
+    background: lightblue;
+    order: 2; /*Orden de las cajas*/
+    flex-grow: 1; /*Prioridad de tamaño*/
+    flex-basis: 50%; /*Districion de ancho en tamaño*/
+
+}
+
+.c2{
+    background: lightcoral;
+    order: 3;
+    flex-grow: 1;
+}
+
+.c3{
+    background: lightgreen;
+    order: 1;
+    flex-grow: 1;
 }
