@@ -38,7 +38,7 @@ body{
     background: lightblue;
     order: 2; /*Orden de las cajas*/
     flex-grow: 1; /*Prioridad de tamaño*/
-    flex-basis: 50%; /*Districion de ancho en tamaño*/
+    flex-basis: 50%; /*Distribucion de ancho en tamaño*/
 
 }
 
